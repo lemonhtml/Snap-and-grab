@@ -1,0 +1,548 @@
+
+<!DOCTYPE html>
+<html>
+  <pre>Created by Snap and grab's</pre>
+  <pre>General manager</pre>
+<head>
+    <title>Snap and Grab</title>
+    <style>
+        body {
+            background-image: url('814_15515.jpg');
+            background-size: 120%; /* Enlarged background */
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            animation: backgroundAnimation 20s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background-size: 100%;
+            }
+            100% {
+                background-size: 120%;
+            }
+        }
+
+        /* Add a container for content and set some spacing */
+        .container {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 5px;
+            color: #fafafa;
+            animation: fadeIn 1s;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        details {
+            margin-bottom: 20px;
+            color: #fafafa;
+        }
+
+        summary {
+            padding: 1rem;
+            cursor: pointer;
+        }
+
+        summary:hover {
+            color: #EF6C00;
+        }
+
+        details > ul {
+            padding: 1rem;
+            margin: 0;
+        }
+
+        p {
+            padding: 15px;
+            margin: 0;
+        }
+
+        .order-button {
+            background-color: #EF6C00;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-top: 20px;
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .order-button:hover {
+            background-color: #FFA726;
+            animation: none; /* Remove animation on hover */
+        }
+
+        .product-image {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <details>
+        <summary>About us</summary>
+        <p>"Snap and Grab: Your Local Food Haven Offering a delectable variety of fresh, delicious, and locally sourced food items."</p>
+    </details>
+
+    <details>
+        <summary>Products</summary>
+        <p>What's your type</p>
+        <ul>
+            <li>
+                <img class="product-image" src="/1000_F_485988083_PAiWtQOzvQ3nKgFwq4srzonHApbP8ICj.jpg" alt="Culture Food">
+                <p>Culture food: Bogobe and drumsticks with Chakalaka</p>
+                <p>Description: A traditional African dish with a modern twist.</p>
+            </li>
+            <li>
+                <img class="product-image" src="/siddhivinayak-sandwich-and-juice-mumbai-juice-centres-9a06kkyjlq.jpg" alt="Sandwich">
+                <p>Sandwich</p>
+                <p>Description: Freshly made sandwiches with a variety of fillings.</p>
+            </li>
+            <li>
+                <img class="product-image" src="/814_145932.jpg" alt="Snacks and Juice">
+                <p>Snacks and/or Juice</p>
+                <p>Description: Delicious snacks and refreshing juices to satisfy your cravings.</p>
+            </li>
+        </ul>
+    </details>
+
+    <details>
+        <summary>Contact us</summary>
+        <p>Contact us on</p>
+        <ul>
+            <li>0728520031</li>
+            <li>Snap and grab's Facebook account: SAG</li>
+        </ul>
+    </details>
+
+    <button class="order-button" onclick="orderFood()">Order Now</button>
+    <textarea class="order-description" id="orderDescription" placeholder="Enter food order description..."></textarea>
+
+</div>
+
+<script>
+    document.querySelectorAll("details").forEach(el => el.onclick = closeAll);
+
+    function closeAll() {
+        const open = document.querySelector("details[open]")
+        if (open && open !== this) open.removeAttribute("open")
+    }
+
+    function orderFood() {
+        const description = document.getElementById("orderDescription").value;
+        if (description.trim() !== "") {
+            alert("Order successfully odered unless if you ordered : " + description);
+        } else {
+            alert("Order unsuccessful. Please provide a description.");
+        }
+    }
+</script>
+
+</body>
+</html>
+
+<html>
+  <b>"Snap and Grab is a culinary enterprise specializing in the vibrant and diverse flavors of African cultural cuisine."</b>
+  </html>
+ 
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<title>News</title>
+<style>
+.newstd{
+  border:none;
+  padding:5px 20px;
+  background:#1174A8;
+  color:white;
+}
+
+.newstd2{
+  border:1px solid #B71C1C;
+  border-radius:6px;
+  padding:5px 20px;
+  background:#E53935;
+  color:white;
+}
+
+.newstd3{
+  padding:2px 5px;
+  background:#5D4037;
+  color:white;
+}
+
+.newstxt{
+  background: #f4f4f4;
+  margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<table>
+<tr>
+<td class="newstd" >Snap and grab</td>
+<td class="newstxt" ><marquee align="center" >Order your food with our website or call us now.</marquee></td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr>
+<td class="newstxt" ><marquee align="center">Order what you wsnt with our WhatsApp account </marquee></marquee>.</marquee></td>
+<td class="newstd2" >Snap and Grab</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr>
+<td class="newstd3
+<!DOCTYPE html>
+<html>
+<head>
+<title>Local business website</title>
+<style>
+.newstd{
+  border:none;
+  padding:5px 20px;
+  background:#1174A8;
+  color:white;
+}
+
+.newstd2{
+  border:1px solid #B71C1C;
+  border-radius:6px;
+  padding:5px 20px;
+  background:#E53935;
+  color:white;
+}
+
+.newstd3{
+  padding:2px 5px;
+  background:#5D4037;
+  color:white;
+}
+
+.newstxt{
+  background: #f4f4f4;
+  margin-top:10px;
+}
+</style>
+</head>
+<body>
+
+<table>
+<tr>
+<td class="newstd" >Snap and grab</td>
+<td class="newstxt" ><marquee align="center" >Order your food with our website.</marquee></td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr>
+<td class="newstxt" ><marquee align="center" >Order your food with our WhatsApp account .</marquee></td>
+<td class="newstd2" >Snap and grab</td>
+</tr>
+</table>
+
+<br>
+
+<table>
+<tr>
+<td class="newstd3" >Snap and grab</td>
+<td class="newstxt" ><marquee align="center" >Snap and grab everything you need is with us.</marquee></td>
+<td class="newstd3" id="clock" ></td>
+</tr>
+</table>
+
+</body>
+<script>
+var today = new Date();
+var date = today.getHours()+":"+today.getMinutes();
+document.getElementById("clock").innerHTML = date;
+</script>
+</html>
+
+
+
+<td class="newstxt" ><marquee align="center" >Thank you for choosing SAG.</marquee></td>
+<td class="newstd3" id="clock" ></td>
+</tr>
+</table>
+
+</body>
+<script>
+var today = new Date();
+var date = today.getHours()+":"+today.getMinutes();
+document.getElementById("clock").innerHTML = date;
+</script>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>About Page</title>
+<style>
+html{
+  padding:0;
+  margin:0;
+}
+
+body{
+  background-color:#EFEFEF;
+}
+
+.section{
+  background-color: #FFFFFF;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+#header {
+  background-image: url("https://fastly.picsum.photos/id/922/700/300.jpg?hmac=BBhiGuQvLRUra6sOsFQu4H9sDvXxiAy5OwOLYpqS2TY");
+  background-size: cover;
+}
+
+#header img{
+  border-radius:50%;
+  border:1px solid #212121;
+}
+
+#header p {
+  font-size: 20pt;
+  color: #EFEFEF;
+  padding-top: 5px;
+  margin: 0;
+  font-weight: bold;
+  text-align: center;
+}
+
+progress {
+  width: 80%;
+  height: 18px;
+  margin-left:10%;
+  color: #3fb6b2;
+  background: #efefef;
+  border-radius:10px;
+}
+
+progress::-webkit-progress-bar {
+  background: #efefef;
+  border-radius:10px;
+}
+
+progress::-webkit-progress-value {
+  background: #607D8B;
+  border-radius:10px;
+}
+
+#languages p{
+  text-align:center;
+  font-size:18px;
+  font-weight:bold;
+}
+
+form {
+  text-align: center;
+  margin-top: 0;
+}
+
+input, textarea {
+  margin-bottom: 8px;
+  font-size: 11pt;
+  padding: 10px 10px 10px;
+  border: 1px solid #cecece;
+  background-color: #EFEFEF;
+  color: #404040;
+  border-radius: 10px;
+  width: 70%;
+  outline: none;
+}
+
+.submit {
+  background-color: #607D8B;
+  border-radius: 10px;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  margin: 0;
+  font-weight: bold;
+}
+
+textarea {
+  height: 80px;
+}
+
+h2{
+  color:#607D8B;
+}
+</style>
+</head>
+<body>
+<!--Header Start-->
+<div id="header" class="section" align="center" >
+<img src="https://fastly.picsum.photos/id/1012/200/200.jpg?hmac=kENwT0f1ecqbPzBGAw3ITKIrm1xoJdF0oh5tq6nosuM" width="70px" >
+<p>Snap and grab</p>
+</div>
+
+<!--About Me-->
+<div class="section" >
+<h2 align="center" >About website</h2>
+<p>Snap and Grab sincerely apologizes for any inconvenience you may have experienced while using our service. We understand that our initial promise of delivering a truly captivating and seamless experience may not have been fully realized. We want to take this opportunity to explain that the development of our website was expedited, taking just a single week to create. This accelerated timeline, while efficient, did not allow us the necessary time for thorough testing and refinement, which has resulted in the appearance of some unexpected bugs.
+
+We deeply appreciate your patience and understanding during this time. Our team is actively working to address these issues and enhance the overall functionality of our website. We are committed to providing you with the exceptional service we promised from the outset. Your feedback is invaluable to us, and we are taking every measure to ensure that Snap and Grab becomes a reliable platform that exceeds your expectations.
+
+Once again, thank you for choosing Snap and Grab, and we look forward to serving you with an improved and bug-free experience in the near future. Your satisfaction remains our top priority, and we are dedicated to making your interactions with our website truly fascinating and hassle-free.</p>
+</div>
+
+<!--Coding Languages-->
+<div id="languages"  class="section">
+<p>Customers</p>
+<progress min="0" max="100" value="90"></progress>
+<p>Equity</p>
+<progress min="0" max="100" value="80"></progress>
+<p>Risk management</p>
+<progress min="0" max="100" value="10"></progress>
+<p>Workers</p>
+<progress min="0" max="100" value="60"></progress>
+<p>Business management</p></p>
+<progress min="0" max="100" value="90"></progress>
+<p>Price</p>
+<progress min="0" max="100" value="20"></progress>
+</div>
+
+<div class="section">
+<form>
+<h2>Products</h2>
+<input placeholder="Name" type="text" required><br>
+<input placeholder="Email" type="email" required><br>
+<textarea placeholder="Message" required></textarea>
+<input type="submit" class="submit">
+</form>
+</div>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snap and Grab</title>
+    <pre>If the site doesn't respond tap on link below</pre>
+    <style>
+        /* Your existing styles here... */
+
+        /* Add link styles */
+        .external-link {
+            color: #EF6C00;
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .external-link:hover {
+            color: #FFA726;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <details>
+            <summary>About us</summary>
+            <p>"Snap and Grab: Your Local Food Haven Offering a delectable variety of fresh, delicious, and locally sourced food items."</p>
+        </details>
+
+        <details>
+            <summary>Products</summary>
+            <p>What's your type</p>
+            <ul>
+                <!-- Your product list here... -->
+            </ul>
+        </details>
+
+        <details>
+            <summary>Contact us</summary>
+            <p>Contact us on</p>
+            <ul>
+                <li>0728520031</li>
+                <li>
+                    Snap and grab's Facebook account:
+                    <a class="external-link" href="https://www.facebook.com/SAG" target="_blank">SAG Facebook</a>
+                </li>
+                <li>
+                    WhatsApp:
+                    <a class="external-link" href="https://wa.me/0728520031" target="_blank">WhatsApp</a>
+                </li>
+            </ul>
+        </details>
+
+        <button class="order-button" onclick="orderFood()">Order Now</button>
+        <textarea class="order-description" id="orderDescription" placeholder="Enter food order description..."></textarea>
+    </div>
+
+    <script>
+        // Your JavaScript functions here...
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Bubble Particles</title>
+</head>
+<body>
+    <div class="container">
+        <div class="bubble"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+<html>
+<footer>
+<p>Source of code in google drive</p>
+</footer>
+<footer>
+    <p>&copy; 2023 Snap and Grab. All rights reserved.</p>
+  </footer>
+</body>
+</html>
